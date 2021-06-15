@@ -1,0 +1,8 @@
+*.iml
+IlluminatedCloud/
+.idea/
+deploy/
+ant/
+node_modules/
+/resource-bundles/
+.sfdx/

@@ -1,0 +1,21 @@
+<template>
+
+
+    <h1>Financial Services Account Listing</h1>
+
+    <lightning-input type="text" name="input1" label="Filter by Account Name" onkeyup={onNameSearch} ></lightning-input>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={accounts}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                suppress-bottom-bar
+                columns={columns}
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={onHandleSort}>
+        </lightning-datatable>
+    </div>
+</template>
